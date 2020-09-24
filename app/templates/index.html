@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<h1>Event Planner</h1>
+
+<form action="/add_event" method="POST">
+    <label for="name">Event Name</label>
+
+</form>
+
+{% for event in events%}
+<div>
+    <ul>
+        <li>{{event.name}}: {{event.date}} <br> Guests: {{event.num_of_guests}}: {{event.room_location}}:
+            {{event.description}}
+        </li>
+    </ul>
+</div>
+
+{% endfor %}
+{% endblock %}
