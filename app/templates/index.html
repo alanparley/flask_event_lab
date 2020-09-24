@@ -5,7 +5,17 @@
 <h1>Event Planner</h1>
 
 <form action="/add_event" method="POST">
-    <label for="name">Event Name</label>
+    <label for="eventname">Event Name</label>
+    <input type="text" name="eventname" id="eventname">
+    <label for="date">Event Date</label>
+    <input type="date" name="eventdate" id="eventdate">
+    <label for="guestnumber">Number of Guests</label>
+    <input type="text" name="guestnumber" id="guestnumber">
+    <label for="roomlocation">Room Location</label>
+    <input type="text" name="roomlocation" id="roomlocation">
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description">
+    <input type="submit" value="Add Event">
 
 </form>
 
